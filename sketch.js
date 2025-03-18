@@ -1,0 +1,48 @@
+
+let input;
+let img ;
+
+
+function preload() {
+  img = loadImage('yard.png');
+  
+  
+}
+
+function setup() {
+  
+let h=500;
+  let canvas = createCanvas(windowWidth,h,WEBGL);
+  canvas.parent('sketch-holder');
+}
+
+function draw() {
+  background(255,255,255);
+      
+  orbitControl();
+rotateZ(frameCount * 0.005);
+  rotateX(frameCount * -0.005);
+  rotateY(frameCount * 0.0082);
+    push();
+ noStroke();
+  
+
+
+
+      // Draw the image if loaded.
+
+  
+    ambientLight(250, 250, 250,250);
+pointLight(225, 28, 20);
+  box(200);
+   texture(img);
+ // Set the material
+
+  box(200);
+
+     specularMaterial(25, 25, 25)
+  
+
+  
+  
+}
