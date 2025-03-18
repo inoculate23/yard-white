@@ -11,8 +11,8 @@ function preload() {
 
 function setup() {
   
-let h=500;
-  let canvas = createCanvas(windowWidth,h,WEBGL);
+let h=600;
+  let canvas = createCanvas(1100,600,WEBGL);
   canvas.parent('sketch-holder');
 }
 
@@ -34,11 +34,11 @@ rotateZ(frameCount * 0.005);
   
     ambientLight(250, 250, 250,250);
 pointLight(225, 28, 20);
-  box(200);
+  box(259);
    texture(img);
  // Set the material
 
-  box(200);
+  box(300);
 
      specularMaterial(25, 25, 25)
   
@@ -46,3 +46,4 @@ pointLight(225, 28, 20);
   
   
 }
+
