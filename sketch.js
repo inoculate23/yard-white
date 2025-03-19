@@ -12,7 +12,7 @@ function preload() {
 function setup() {
   
 let h=600;
-  let canvas = createCanvas(1100,600,WEBGL);
+  let canvas = createCanvas(600,600,WEBGL);
   canvas.parent('sketch-holder');
 }
 
